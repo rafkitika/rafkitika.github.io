@@ -108,3 +108,27 @@ img {
     right: 0;
     padding-top: 170%;
 }
+
+#closing {
+    position: relative;
+    background-image:url('5. closing2.jpg');
+    background-size:     cover;                      /* <------ */
+    background-repeat:   no-repeat;
+    background-position: center center; 
+    display: block;
+    margin: 0 auto;
+    height:1920px;
+    width: 1080px;
+}
+
+#tiga {
+    position: relative;
+    background-image:url('3. nama mempelai 2.jpg');
+    background-size:     cover;                      /* <------ */
+    background-repeat:   no-repeat;
+    background-position: center center; 
+    display: block;
+    margin: 0 auto;
+    height:1920px;
+    width: 1080px;
+}
