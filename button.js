@@ -62,13 +62,31 @@ function toggleFade(element) {
 }
 
 function zoomFade(element) {
-    if (!element.classList.contains('zoom-fade-out')) {
 
-        element.classList.remove('zoom-fade-in');
-        element.classList.add('zoom-fade-out');
-        return;
+    if 
+    (!element.classList.contains('fade-out')) {
+        element.classList.add('pedZoom');
+        element.classList.add('visuallyHidden');
+        element.addEventListener('transitionend',
+        function(e) {
+            element.classList.add('fade-out');
+            }, {
+            capture: false,
+            once: true,
+            passive: false
+            });
     }
-
-    element.classList.add('zoom-fade-in');
-    element.classList.remove('zoom-fade-out');
+    
 }
+
+// function zoomFade(element) {
+//     if (!element.classList.contains('zoom-fade-out')) {
+
+//         element.classList.remove('zoom-fade-in');
+//         element.classList.add('zoom-fade-out');
+//         return;
+//     }
+
+//     element.classList.add('zoom-fade-in');
+//     element.classList.remove('zoom-fade-out');
+// }

@@ -10,6 +10,14 @@ img {
     margin:0 auto;
     display: block;
     position: relative;
+    background-image:url('1. cover luar BACKGROUND.jpg');
+    background-size:     cover;                      /* <------ */
+    background-repeat:   no-repeat;
+    background-position: center center; 
+    display: block;
+    margin: 0 auto;
+    height:1920px;
+    width: 1080px;
 }
 #coverDalam {
     margin: 0 auto;
@@ -62,7 +70,11 @@ img {
     display:block;
     transition: all 2s linear;
 }
-
+.pedZoom {
+    display:block;
+    transition: all 2s linear;
+    transform:scale(1.2);
+}
 .fade-out {
     /* opacity:0;
     visibility: hidden; */
@@ -75,16 +87,11 @@ img {
 
 
 
+
 .zoom-fade-in {
     opacity: 1;
     transition: opacity 2s;
     display:block;
-}
-.zoom-fade-out {
-    opacity:0;
-    transform:scale(1.2);
-    visibility: hidden;
-    transition: opacity 2s, visibility 2s, transform 2s;
 }
 
 #imgLokasi {
