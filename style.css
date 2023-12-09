@@ -90,15 +90,21 @@ img {
 
 #imgLokasi {
     position: relative;
+    background-image:url('4. akad mandoa BUTTON BARU TANPA BUTTON.jpg');
+    background-size:     cover;                      /* <------ */
+    background-repeat:   no-repeat;
+    background-position: center center; 
     display: block;
     margin: 0 auto;
+    height:1920px
 }
 
 #btnLokasi {
-    position: absolute;
+    position: relative;
     margin: 0 auto;
     top: auto;
     bottom: 11.6%;
     left: 0;
     right: 0;
+    padding-top: 170%;
 }
