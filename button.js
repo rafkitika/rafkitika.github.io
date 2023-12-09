@@ -22,7 +22,7 @@ function initFade() {
     console.log(urlParams);
     const modul = urlParams.get("tamuUndangan");
     console.log(modul);
-    if (modul=="undefined") {
+    if (!modul) {
         document.getElementById("tamuUndangan").innerHTML = "Tamu Undangan";
     }else {
         document.getElementById("tamuUndangan").innerHTML = modul;
