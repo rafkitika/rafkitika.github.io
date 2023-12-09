@@ -1,7 +1,21 @@
 window.onload = function () {
 
     initFade();
-    
+    GetURLParameter(sParam);
+}
+
+function GetURLParameter(sParam)
+{
+    var sPageURL = window.location.search.substring(1);
+    var sURLVariables = sPageURL.split('&');
+    for (var i = 0; i < sURLVariables.length; i++) 
+    {
+        var sParameterName = sURLVariables[i].split('=');
+        if (sParameterName[0] == sParam) 
+        {
+            return sParameterName[1];
+        }
+    }
 }
 
 function initFade() {
@@ -15,8 +29,11 @@ function initFade() {
     let coverDalam = document.getElementById('coverDalam');
     trigger.addEventListener('click',() => {zoomFade(gapuraAtas)});
     trigger.addEventListener('click',() => {toggleFade(coverGelap), toggleFade(coverDalam), toggleFade(content), toggleFade(tulisanSaja)});
-
+    var modul = GetURLParameter('tamuUndangan');
+    modul = decodeURI(modul)
+    document.getElementById("tamuUndangan").innerHTML = modul;
 }
+
 
 // function toggleFade(element) {
 
