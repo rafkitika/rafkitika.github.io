@@ -16,7 +16,10 @@ function initFade() {
     // let coverBackground = document.getElementById('coverBackground');
     let gapuraAtas = document.getElementById('gapuraAtas');
     let coverDalam = document.getElementById('coverDalam');
+    let music = document.getElementById('music');
+     
     trigger.addEventListener('click',() => {zoomFade(gapuraAtas)});
+    trigger.addEventListener('click',() => {togglePlay(music)});
     trigger.addEventListener('click',() => {toggleFade(coverGelap), toggleFade(coverDalam), toggleFade(content), toggleFade(tulisanSaja)});
     const urlParams = new URLSearchParams(document.location.search);
     console.log(urlParams);
@@ -31,7 +34,9 @@ function initFade() {
 }
 
 
-
+function togglePlay() { 
+    music.play(); 
+  } 
 
 
 // function toggleFade(element) {
@@ -76,6 +81,7 @@ function toggleFade(element) {
     }
     
 }
+
 
 function zoomFade(element) {
 
