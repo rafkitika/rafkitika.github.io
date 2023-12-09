@@ -1,0 +1,104 @@
+body {
+    margin: 0 auto;
+    width: 70%;
+
+}
+img {
+    margin: 0 auto;
+    display: block;
+}
+#coverDepan {
+    margin:0 auto;
+    display: block;
+    position: relative;
+}
+#coverDalam {
+    margin: 0 auto;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    width: 1080px;
+}
+#coverBackground {
+    position: relative;
+    top: 0;
+    left: 0;
+}
+#gapuraAtas{
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin: 0 auto;
+
+}
+#coverGelap {
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin: 0 auto;
+
+}
+#buttonMenghilang{
+    position: absolute;
+    top: 0px;
+    left: 5%;
+    margin: 0 auto;
+    z-index:99;
+}
+#dear {
+    margin: 0 auto;
+    text-align:center;
+    font-size: xx-large;
+    color: #BDAA5E;
+}
+#tamuUndangan {
+    margin: 0 auto;
+    text-align:center;
+    font-size: xx-large;
+    color: #BDAA5E;
+}
+
+.ped {
+    display:block;
+    transition: all 2s linear;
+}
+
+.fade-out {
+    /* opacity:0;
+    visibility: hidden; */
+    display:none;
+    /* transition: opacity 2s, visibility 2s; */
+}
+.visuallyHidden {
+    opacity: 0;
+}
+
+
+
+.zoom-fade-in {
+    opacity: 1;
+    transition: opacity 2s;
+    display:block;
+}
+.zoom-fade-out {
+    opacity:0;
+    transform:scale(1.2);
+    visibility: hidden;
+    transition: opacity 2s, visibility 2s, transform 2s;
+}
+
+#imgLokasi {
+    position: relative;
+    display: block;
+    margin: 0 auto;
+}
+
+#btnLokasi {
+    position: absolute;
+    margin: 0 auto;
+    top: auto;
+    bottom: 11.6%;
+    left: 0;
+    right: 0;
+}
