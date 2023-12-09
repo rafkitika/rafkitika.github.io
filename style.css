@@ -96,7 +96,8 @@ img {
     background-position: center center; 
     display: block;
     margin: 0 auto;
-    height:1920px
+    height:1920px;
+    width: 1080px;
 }
 
 #btnLokasi {
