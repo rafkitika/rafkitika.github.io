@@ -1,7 +1,7 @@
 window.onload = function () {
 
     initFade();
-    // GetURLParameter(sParam);
+//     GetURLParameter(sParam);
 }
 
 
@@ -18,29 +18,20 @@ function initFade() {
     let coverDalam = document.getElementById('coverDalam');
     trigger.addEventListener('click',() => {zoomFade(gapuraAtas)});
     trigger.addEventListener('click',() => {toggleFade(coverGelap), toggleFade(coverDalam), toggleFade(content), toggleFade(tulisanSaja)});
-    function GetURLParameter(sParam)
-{
-    var sPageURL = window.location.search.substring(1);
-    var sURLVariables = sPageURL.split('&');
-    for (var i = 0; i < sURLVariables.length; i++) 
-    {
-        var sParameterName = sURLVariables[i].split('=');
-        if (sParameterName[0] == sParam) 
-        {
-            return sParameterName[1];
-        }
-    }
-}
-    var modul = GetURLParameter('tamuUndangan');
-    modul = decodeURI(modul)
-    if (modul="undefined") {
+    const urlParams = new URLSearchParams(document.location.search);
+    console.log(urlParams);
+    const modul = urlParams.get("tamuUndangan");
+    console.log(modul);
+    if (modul=="undefined") {
         document.getElementById("tamuUndangan").innerHTML = "Tamu Undangan";
     }else {
         document.getElementById("tamuUndangan").innerHTML = modul;
     }
-    console.log(modul);
 
 }
+
+
+
 
 
 // function toggleFade(element) {
